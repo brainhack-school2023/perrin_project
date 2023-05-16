@@ -1,0 +1,26 @@
+{
+    "Name": "Interoception during aging: The heartbeat detection task",
+    "BIDSVersion": "1.2.1",
+    "License": "CC0",
+    "Authors": [
+        "Olga R. Dobrushina",
+        "Larisa A. Dobrynina",
+        "Galina A. Arina",
+        "Maria V. Gubanova",
+        "Anastasia V. Belopasova",
+        "Evgenia S. Novikova",
+        "Anastasia D. Suslina",
+        "Elena I. Kremneva",
+        "Ekaterina V. Pechenkova",
+        "Marina V. Krotenkova"
+    ],
+    "Acknowledgements": "The authors thank the administration of Neurology Research Center for the assistance with organisation of the study.",
+    "HowToAcknowledge": "This dataset was provided by Olga R. Dobrushina, Larisa A. Dobrynina, Galina A. Arina, Maria V. Gubanova, Anastasia V. Belopasova, Evgenia S. Novikova, Anastasia D. Suslina, Elena I. Kremneva, Ekaterina V. Pechenkova, Marina V. Krotenkova",
+    "Funding": [
+        "This research recieved no external funding."
+    ],
+    "ReferencesAndLinks": [
+        "Here will be journal references"
+    ],
+    "DatasetDOI": "10.18112/openneuro.ds003763.v1.0.0"
+}

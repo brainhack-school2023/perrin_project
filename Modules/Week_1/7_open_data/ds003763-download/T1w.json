@@ -1,0 +1,22 @@
+{
+  "MagneticFieldStrength": 3,
+  "Manufacturer": "Siemens",
+  "ManufacturersModelName": "Verio",
+  "SoftwareVersions": "syngo MR B17",
+  "ProtocolName": "t1_mpr_sag_p2_iso",
+  "SeriesDescription": "t1_mpr_ns_sag_p2_iso",
+  "ScanningSequence": "GR\\IR",
+  "SequenceVariant": "SP\\MP\\OSP",
+  "ScanOptions": "IR",
+  "SliceThickness": 1,
+  "EchoTime": 0.00247,
+  "RepetitionTime": 1.9,
+  "InversionTime": 0.9,
+  "NumberOfAverages": 1,
+  "FlipAngle": 9,
+  "PercentPhaseFOV": 100,
+  "EchoTrainLength": 1,
+  "PhaseEncodingSteps": 246,
+  "AcquisitionMatrix": [0, 256, 246, 0],
+  "PixelBandwidth": 170
+}

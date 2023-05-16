@@ -1,0 +1,10 @@
+The dataset contains fMRI data from a heartbeat detection task in 30 participants aged 40–65 years, with no history of cardiovascular events, such as stroke or myocardial infarction, and no severe white matter hyperintensities according to structural MRI (modified Fazekas score of 2 or less).
+
+Heartbeat detection task is described in the following publications:
+Dobrushina, Olga R., Arina, G. A., Dobrynina, L. A., Suslina, A. D., Solodchik, P. O., Belopasova, A. V., … Krotenkova, M. V. (2020). The ability to understand emotions is associated with interoception‐related insular activation and white matter integrity during aging. Psychophysiology, 57(3), e13537. https://doi.org/10.1111/psyp.13537
+Krotenkova, M. V. (2020). [The interrelation between interoception and emotional intelligence: a functional neuroimaging study]. Zh Vyssh Nerv Deiat I P Pavlova, 70(2), 206–216. https://doi.org/10.31857/s0044467720020069
+(in Russian, with full description of stimuli material, which was also presented in Russian)
+
+The file participants.tsv contains data on interoceptive accuracy (IAcc).
+
+27 participants also undewent rubber hand illusion. The data is contained in participants.tsv: "drift_emerg_15" corresponds to the proprioceptive drift after 15 s from the onset of emergence phase, "test_own_15" and "control_own_15" correspond to the sum of test and control questions from the ownership questionary after 15 s from the onset of emergence phase. Publication with detailed task description is under review, reference will be provided later.
