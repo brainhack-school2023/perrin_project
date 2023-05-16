@@ -1,0 +1,7 @@
+name: nilearn-demo-env
+channels:
+  - conda-forge
+dependencies:
+  - nilearn
+  - nibabel
+  - pandas
