@@ -7,7 +7,7 @@ Hi, I am Thomas, from Nantes, graduate student at Polytechnique Montreal in biom
    <br /><sub><b>Isaac Perrin</b></sub>
 </a>
 
-Folders
+## Folders
 - data: Raw data for the project, not synced to source control because the dataset is too large.
 - docs: Documentation, including Markdown and reStructuredText (reST).
 - results: Results, including checkpoints, hdf5 files, pickle files, as well as figures and tables.
