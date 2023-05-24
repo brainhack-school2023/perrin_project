@@ -1,0 +1,9 @@
+# Obtain the dataset
+datalad clone git@github.com:OpenNeuroDatasets/ds002336.git
+# or (no GitHub account)
+datalad clone https://github.com/OpenNeuroDatasets/ds002336.git
+# or (Datalad superdataset)
+datalad clone ///openneuro/ds002336
+
+# Download dataset content
+datalad get 
