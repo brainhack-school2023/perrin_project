@@ -7,3 +7,7 @@ datalad clone ///openneuro/ds002336
 
 # Download dataset content
 datalad get 
+
+# Summary of total content present locally
+datalad status --annex all
+
