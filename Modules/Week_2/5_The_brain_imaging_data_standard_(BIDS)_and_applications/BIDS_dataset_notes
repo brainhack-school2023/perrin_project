@@ -1,0 +1,25 @@
+1 error in 304 files
+
+Error 1: [Code 90] SIDECAR_WITHOUT_DATAFILE
+
+Example:
+sub-pixar004_T1w.json
+150.118 KB | application/json
+Location: ds000228/sub-pixar004/anat/sub-pixar004_T1w.json
+Reason: A json sidecar file was found without a corresponding data file
+
+Explanation: This is because I have downloaded with datalad the data 
+only for the first 3 subjects
+
+3 warnings in 308 files
+
+Warning 1: [Code 25] EVENTS_TSV_MISSING
+Task scans should have a corresponding events.tsv file. If this is a resting state scan you can ignore this warning or rename the task to include the word "rest".3 files
+
+Warning 2: [Code 38] INCONSISTENT_SUBJECTS
+Not all subjects contain the same files. Each subject should contain the same number of files with the same naming unless some files are known to be missing.304 files
+
+Warning 3: [Code 82] CUSTOM_COLUMN_WITHOUT_DESCRIPTION
+Tabular file contains custom columns not described in a data dictionary
+
+They are not a concern because they are just warnings and not errors.
