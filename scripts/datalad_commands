@@ -13,9 +13,8 @@ datalad status --annex all
 
 # Run script to fix BIDS errors
 datalad run -m "Fix BIDS errors in original dataset" \
--i "data/ds000201" \
--o "data/ds000201/task-*_bold.json" \
--o "data/ds000201/sub-*/ses-*/beh/sub-*_task-PVT_events.tsv" \
--o "data/ds000201/sub-*/ses-*/sub-*_ses-*_scans.tsv" \
+-o "task-*_bold.json" \
+-o "sub-*/ses-*/beh/sub-*_task-PVT_events.tsv" \
+-o "sub-*/ses-*/sub-*_ses-*_scans.tsv" \
 "python3 scripts/bids_fix.py" \
 --dry-run

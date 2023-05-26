@@ -4,7 +4,11 @@ import json
 import csv
 import pandas as pd
 
-dataset_dir = '../data/ds000201/'
+# It is recommended to craft the command such that it can run in the root directory of the dataset that the command will be recorded in. 
+# However, as long as the command is executed somewhere underneath the dataset root, 
+# the exact location will be recorded relative to the dataset root.
+
+# dataset_dir = 'data/ds000201/'
 
 ## Error 1: [Code 55] JSON_SCHEMA_VALIDATION_ERROR
 # Invalid JSON file. The file is not formatted according the schema.
@@ -14,8 +18,8 @@ dataset_dir = '../data/ds000201/'
 #   Evidence: .CogAtlasID should match format "uri"
 
 # Fix modify as url (better than just delete "CogAtlasID") (in root files and not leaves):
-def fix_json_schema(dataset_dir):
-    task_json_files = sorted(glob.glob(os.path.join(dataset_dir, 'task-*_bold.json')))
+def fix_json_schema():
+    task_json_files = sorted(glob.glob('task-*_bold.json'))#os.path.join(dataset_dir, 'task-*_bold.json')))
     for filename in task_json_files:
         # Read .json file
         with open(filename, 'r') as ff:
@@ -52,9 +56,9 @@ def fix_json_schema(dataset_dir):
 #   Line: 3 row 2: n/a 0.395
 
 # Fix for errors 2 and 3: merge even and odd rows which were separated before
-def fix_beh_tsv(dataset_dir):
+def fix_beh_tsv():
     relative_path = 'sub-*/ses-*/beh/sub-*_task-PVT_events.tsv'
-    beh_tsv_files = sorted(glob.glob(os.path.join(dataset_dir, relative_path)))
+    beh_tsv_files = sorted(glob.glob(relative_path)) # os.path.join(dataset_dir, relative_path)
     for filename in beh_tsv_files[0:1]:
         with open(filename, 'r') as file:
             reader = csv.reader(file, delimiter='\t')
@@ -76,9 +80,9 @@ def fix_beh_tsv(dataset_dir):
 ## Error 5: [Code 129] SCANS_FILENAME_NOT_MATCH_DATASET
 # The filename in scans.tsv file does not match what is present in the BIDS dataset.
 # Fix: remove lines fieldmap, imaginary, real
-def fix_scans_filename(dataset_dir):
+def fix_scans_filename():
     relative_path = 'sub-*/ses-*/sub-*_ses-*_scans.tsv'
-    beh_tsv_files = sorted(glob.glob(os.path.join(dataset_dir, relative_path)))
+    beh_tsv_files = sorted(glob.glob(relative_path)) # os.path.join(dataset_dir, relative_path)
     for filename in beh_tsv_files[0:1]:
         with open(filename, 'r') as file:
             df = pd.read_csv(filename, delimiter='\t')
@@ -90,10 +94,10 @@ def fix_scans_filename(dataset_dir):
             # new_df.to_csv(filename[:-4] + '_bis.tsv', sep='\t')
 
 # Fix error 1
-fix_json_schema(dataset_dir)
+fix_json_schema()
 
 # Fix errors 2 and 3
-fix_beh_tsv(dataset_dir)
+fix_beh_tsv()
 
 # Fix error 5
-fix_scans_filename(dataset_dir)
+fix_scans_filename()
