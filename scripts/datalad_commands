@@ -11,10 +11,10 @@ datalad get
 # Summary of total content present locally
 datalad status --annex all
 
-# Run script to fix BIDS errors
+# Run script to fix BIDS errors (execute inside of /data/ds000201 directory)
 datalad run -m "Fix BIDS errors in original dataset" \
 -o "task-*_bold.json" \
 -o "sub-*/ses-*/beh/sub-*_task-PVT_events.tsv" \
 -o "sub-*/ses-*/sub-*_ses-*_scans.tsv" \
-"python3 scripts/bids_fix.py" \
+"python3 ../../scripts/bids_fix.py" \
 --dry-run
