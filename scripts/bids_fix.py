@@ -66,7 +66,6 @@ def fix_beh_tsv(dataset_dir):
             new_df.columns = headers
             # Save the modified .tsv file
             new_df.to_csv(filename, sep='\t')
-            # new_df.to_csv(filename[:-4] + '_bis.tsv', sep='\t')
 
 ## Error 4: [Code 90] SIDECAR_WITHOUT_DATAFILE
 # A json sidecar file was found without a corresponding data file
@@ -87,14 +86,14 @@ def fix_scans_filename(dataset_dir):
             pattern = '|'.join(values_to_remove)
             new_df = df.loc[~df['filename'].str.contains(pattern, case=False)].reset_index(drop=True)
             # Save the modified .tsv file
-            # new_df.to_csv(filename, sep='\t')
-            new_df.to_csv(filename[:-4] + '_bis.tsv', sep='\t')
+            new_df.to_csv(filename, sep='\t')
+            # new_df.to_csv(filename[:-4] + '_bis.tsv', sep='\t')
 
 # Fix error 1
-# fix_json_schema(dataset_dir)
+fix_json_schema(dataset_dir)
 
 # Fix errors 2 and 3
-# fix_beh_tsv(dataset_dir)
+fix_beh_tsv(dataset_dir)
 
 # Fix error 5
-# fix_scans_filename(dataset_dir)
+fix_scans_filename(dataset_dir)
