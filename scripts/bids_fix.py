@@ -1,9 +1,8 @@
 import os
 import glob
+import json
 import csv
 import pandas as pd
-
-
 
 dataset_dir = '../data/ds000201/'
 
@@ -14,17 +13,26 @@ dataset_dir = '../data/ds000201/'
 #   Reason: Invalid JSON file. The file is not formatted according the schema.
 #   Evidence: .CogAtlasID should match format "uri"
 
-# Fix (in root files):
-task_json_files = sorted(glob.glob(os.path.join(dataset_dir, 'task-*_bold.json')))
-print('task_json_files:', task_json_files[0:2])
-"""
-for filename in task_json_files:
-  delete "CogAtlasID" or modify with url
-"""
+# Fix modify as url (better than just delete "CogAtlasID") (in root files and not leaves):
+def fix_json_schema(dataset_dir):
+    task_json_files = sorted(glob.glob(os.path.join(dataset_dir, 'task-*_bold.json')))
+    for filename in task_json_files:
+        # Read .json file
+        with open(filename, 'r') as ff:
+            data = json.load(ff)
+            if 'CogAtlasID' in data.keys():
+                new_format = 'https://www.cognitiveatlas.org/concept/id/' + data['CogAtlasID'] + '/'
+                data['CogAtlasID'] = new_format
+        with open(filename, 'w') as ff:
+            json_object = json.dumps(data, indent=3)
+            ff.write(json_object)
 
-# Fix source: BIDS Validator error - [Code 55] JSON_SCHEMA_VALIDATION_ERROR 
-# https://neurostars.org/t/bids-validator-error-code-55-json-schema-validation-error-effectiveechospacing/3704
+# Fix source: URI formatting of the default "TODO" value for "CogAtlasID" #473 
+# https://github.com/nipy/heudiconv/pull/473
+# Example url: https://www.cognitiveatlas.org/concept/id/trm_557b4844ca14d/
 # Other sources:
+#   BIDS Validator error - [Code 55] JSON_SCHEMA_VALIDATION_ERROR 
+#   https://neurostars.org/t/bids-validator-error-code-55-json-schema-validation-error-effectiveechospacing/3704
 #   CogAtlasID error for json files that don't contain a CogAtlasID field (https://github.com/bids-standard/bids-validator/issues/1139)
 #   (code: 55 - JSON_SCHEMA_VALIDATION_ERROR) #1104 (https://github.com/bids-standard/bids-validator/issues/1104)
 
@@ -82,6 +90,8 @@ def fix_scans_filename(dataset_dir):
             # new_df.to_csv(filename, sep='\t')
             new_df.to_csv(filename[:-4] + '_bis.tsv', sep='\t')
 
+# Fix error 1
+# fix_json_schema(dataset_dir)
 
 # Fix errors 2 and 3
 # fix_beh_tsv(dataset_dir)
