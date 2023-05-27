@@ -3,3 +3,7 @@
 	url = git@github.com:OpenNeuroDatasets/ds000201.git
 	branch = main
 	datalad-id = d7c9cd1c-89f8-11e8-ad8e-0242ac120013
+[submodule "preprocess_ds"]
+	path = preprocess_ds
+	url = ./preprocess_ds
+	datalad-id = 32536777-2067-4998-8d8e-ba61944e6d82
