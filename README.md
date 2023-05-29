@@ -1,9 +1,9 @@
 # BrainHack School 2023 Project
 
-# Effects of Sleepiness on Resting-State Connectivity
+## Effects of Sleepiness on Resting-State Connectivity
 
 <p align="center">
-<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="200"/>
+<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="300"/>
 </p>
  
 ## About Me
