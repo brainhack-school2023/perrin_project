@@ -60,11 +60,13 @@ visualization
 * (Optional: Use containers for maximal reproducibility)
 
 ## 3. BIDS-Validation: Reproducible Neuroimaging Organization
+* [The BIDS Starter Pack](https://bids-standard.github.io/bids-starter-kit/index.html)
 * FAIR
 * Prepared to use with tools like fMRIPrep
 
 ## 4. fMRIPrep: Preprocessing Pipeline for fMRI Data
-* TODO
+* [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html)
+* [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html)
 
 ## 5. Python: Visualization of the data
 * TODO: Add two cool brain pictures (comparison normal sleep vs. sleep-deprived) once I have them
