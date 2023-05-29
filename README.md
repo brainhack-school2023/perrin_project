@@ -31,7 +31,7 @@ Sleep deprivation is commonplace in modern society, but little is known about th
 * Obtained from: [OpenNeuro](https://openneuro.org/). The full dataset is multimodal (T1- and T2-weighted structural images, diffusion images, raw polysomnography data, task-based and resting state fMRI images). I will only use rs-fMRI data for my project.
 
 ## Tools & Methods
-* [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management
+* [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management <img src="images/1280px-Git-logo.svg.png" width="100"/> <img src="images/GitHub-Logo.png" width="100"/> 
 * [DataLad](https://www.datalad.org/) for retrieval and version control of data
 * [BIDS-validator](https://bids-standard.github.io/bids-validator/) to check updated dataset integrity
 * [FMRIPrep](https://fmriprep.org/en/stable/) for data preprocessing
