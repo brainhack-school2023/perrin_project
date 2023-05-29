@@ -22,8 +22,7 @@ datalad run -m "Fix BIDS errors in original dataset" \
 -o "task-*_bold.json" \
 -o "sub-*/ses-*/beh/sub-*_task-PVT_events.tsv" \
 -o "sub-*/ses-*/sub-*_ses-*_scans.tsv" \
-python3 code/bids_fix.py \
-# --dry-run
+python3 code/bids_fix.py
 
 # /bin/sh: 1: python3 code/bids_fix.py: not found
 # WHY?
