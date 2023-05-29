@@ -1,3 +1,5 @@
+[Programmers while Sleeping meme](https://www.thecoderpedia.com/blog/programming-memes/)
+
 [OpenNeuro logo](https://github.com/OpenNeuroOrg/openneuro)
 
 [GitHub logo](https://lthub.ubc.ca/guides/github-instructor-guide/)
