@@ -2,17 +2,18 @@
 
 # Effects of Sleepiness on Resting-State Connectivity
 
-# TODO: Insert image (brain or meme?)
+<p align="center">
+<img src="images/Programming-Memes-Programmer-while-sleeping.jpg">
+</p>
  
 ## About Me
- 
-[Perrin Thomas](https://github.com/thomas-pr)
 
 <a href="https://github.com/Thomas-Pr">
    <img src="https://avatars.githubusercontent.com/u/102051242?v=4?s=100" width="100px;" alt=""/>
-   <br /><sub><b>Isaac Perrin</b></sub>
+   <br /><sub><b>Thomas Perrin</b></sub>
 </a>
- 
+
+
 Hello! My name is Thomas Perrin, I am currently studying to obtain a double degree in biomedical engineering at Polytechnique Montreal. At IMT Atlantique, my home institution in France, I studied mostly medical devices and medical images analysis. Yet, exploring neuroimaging and open-source tools so in-depth is a new and inspiring part of my journey in biomedical engineering!
 
 
