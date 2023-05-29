@@ -11,8 +11,8 @@ datalad clone https://github.com/OpenNeuroDatasets/ds000201.git
 # or (Datalad superdataset)
 datalad clone ///openneuro/ds000201
 
-# Download dataset content
-datalad get 
+# Download data only for first subject
+datalad get sub-9001/ses-*/anat/* sub-9001/ses-*/func/*-rest_*
 
 # Summary of total content present locally
 datalad status --annex all
