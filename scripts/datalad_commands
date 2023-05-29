@@ -1,8 +1,8 @@
 # Create a dataset
-datalad create -c yoda --dataset preprocess_ds
+datalad create -c yoda --dataset preprocess
 
 # Enter the dataset
-cd preprocess_ds
+cd preprocess
 
 # Obtain the dataset (rename to be more intuitively comprehensible)
 datalad clone git@github.com:OpenNeuroDatasets/ds000201.git input/
