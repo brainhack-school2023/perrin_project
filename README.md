@@ -26,16 +26,16 @@ Sleep deprivation is commonplace in modern society, but little is known about th
 **Can resting-state functional connectivity predict sleep deprivation?**
 
 ## Data (TODO: Add link to the dataset)
-* Data used: Resting-State fMRI from the Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old. A functional brain imaging study where 86 healthy participants underwent MRI after normal sleep and partial sleep deprivation (only 3 hours of sleep) in a crossover design. Three experiments were performed investigating emotional mimicry, empathy for pain, and cognitive reappraisal, as well as resting state fMRI.
+* Data used: [Resting-State fMRI from the Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old](https://openneuro.org/datasets/ds000201/versions/1.0.3). A functional brain imaging study where 86 healthy participants underwent MRI after normal sleep and partial sleep deprivation (only 3 hours of sleep) in a crossover design. Three experiments were performed investigating emotional mimicry, empathy for pain, and cognitive reappraisal, as well as resting state fMRI.
 * Fit with the research question: This study aimed to investigate the effects of partial sleep deprivation (PSD) on resting state brain connectivity, emotional contagion, empathy, and emotional regulation.
-* Obtained from: OpenNeuro. The full dataset is multimodal (T1- and T2-weighted structural images, diffusion images, raw polysomnography data, task-based and resting state fMRI images). I will only use rs-fMRI data for my project.
+* Obtained from: [OpenNeuro](https://openneuro.org/). The full dataset is multimodal (T1- and T2-weighted structural images, diffusion images, raw polysomnography data, task-based and resting state fMRI images). I will only use rs-fMRI data for my project.
 
 ## Tools & Methods
-* Git and GitHub for project management
-* DataLad for retrieval and version control of data
-* BIDS-validator to check updated dataset integrity
-* FMRIPrep for data preprocessing
-* Python for visualization (and possibly neuroimaging machine learning) 
+* [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management
+* [DataLad](https://www.datalad.org/) for retrieval and version control of data
+* [BIDS-validator](https://bids-standard.github.io/bids-validator/) to check updated dataset integrity
+* [FMRIPrep](https://fmriprep.org/en/stable/) for data preprocessing
+* [Python](https://www.python.org/) for visualization (and possibly neuroimaging machine learning) 
 
 ## Objectives
 * Familiarize myself with neuroimaging data organization and open science
@@ -49,12 +49,13 @@ visualization
 # Progress Overview: Retrace my Steps
 
 ## 1. OpenNeuro: Select the Dataset
+* 
 * The data was already converted from DICOM to NIfTI
 * TODO: Number of subjects, etc.
 * BIDS organization except for a few errors
 
 ## 2. DataLad: Version Control the Dataset
-* The DataLad Notebook
+* [The DataLad Notebook](https://handbook.datalad.org/en/latest/)
 * Run the code to fix BIDS errors
 * (Optional: Use containers for maximal reproducibility)
 
