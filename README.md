@@ -20,7 +20,7 @@ Hello! My name is Thomas Perrin, I am currently studying to obtain a double degr
 # Project Definition
 
 ## Background
-Sleep deprivation is commonplace in modern society, but little is known about the functional mechanisms and correlates of sleepiness in the awake brain. Sleepiness is a brain state with pervasive effects on cognitive and affective functioning (Killgore, 2010, Tamm et al., 2020). Adult functional neuroimaging (fMRI) studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity (Reidy et al., 2016), with inhibition of top-down-control in emotion (Tamm et al., 2020). Therefore, it would be interesting to explore and predict whether a participant is sleep deprived or not based on a functional connectivity estimation.
+Sleep deprivation is commonplace in modern society, but little is known about the functional mechanisms and correlates of sleepiness in the awake brain. Sleepiness is a brain state with pervasive effects on cognitive and affective functioning (Killgore, 2010, Tamm et al., 2020). Adult fMRI studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity (Reidy et al., 2016), with inhibition of top-down-control in emotion (Tamm et al., 2020). Therefore, it would be interesting to explore and predict whether a participant is sleep deprived or not based on a functional connectivity estimation.
 
 ## Main Question
 **Can resting-state functional connectivity predict sleep deprivation?**
