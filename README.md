@@ -3,7 +3,7 @@
 # Effects of Sleepiness on Resting-State Connectivity
 
 <p align="center">
-<img src="images/Programming-Memes-Programmer-while-sleeping.jpg">
+<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="200"/>
 </p>
  
 ## About Me
