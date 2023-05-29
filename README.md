@@ -85,12 +85,13 @@ visualization
 * Jupyter notebook for visualization (and machine learning)
 
 ## Organization of the Repository
-- data: Raw data for the project, not synced to source control because the dataset is too large.
-- docs: Documentation, including Markdown and reStructuredText (reST).
-- results: Results, including checkpoints, hdf5 files, pickle files, as well as figures and tables.
-- scripts: Scripts (Python, bash, .ipynb notebooks).
-- src: Reusable Python modules for the project (imports).
-- tests: Tests for the code.
+* Modules: Modules completed during the first weeks of BrainHack School.
+* data: Raw data for the project, not synced to source control because the dataset is too large.
+* docs: Documentation, including Markdown and reStructuredText (reST).
+* results: Results, including checkpoints, hdf5 files, pickle files, as well as figures and tables.
+* scripts: Scripts (Python, bash, .ipynb notebooks).
+* src: Reusable Python modules for the project (imports).
+* tests: Tests for the code.
 
 
 # Conclusion?
