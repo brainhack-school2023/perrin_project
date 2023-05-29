@@ -24,5 +24,6 @@ datalad run -m "Fix BIDS errors in original dataset" \
 -o "sub-*/ses-*/sub-*_ses-*_scans.tsv" \
 python3 code/bids_fix.py
 
-# /bin/sh: 1: python3 code/bids_fix.py: not found
-# WHY?
+# Preprocessing with FMRIPrep
+fmriprep preprocess_ds/input/ preprocess_ds/output/ participant \
+--participant-label 9001 --task-id rest 

@@ -1,2 +1,0 @@
-fmriprep preprocess_ds/input/ preprocess_ds/output/ participant \
---participant-label 9001 --task-id rest 
