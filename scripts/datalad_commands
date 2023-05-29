@@ -25,5 +25,5 @@ datalad run -m "Fix BIDS errors in original dataset" \
 python3 code/bids_fix.py
 
 # Preprocessing with FMRIPrep
-fmriprep preprocess_ds/input/ preprocess_ds/output/ participant \
+fmriprep input/ output/ participant \
 --participant-label 9001 --task-id rest 
