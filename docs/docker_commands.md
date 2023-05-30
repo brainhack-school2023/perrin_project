@@ -13,4 +13,4 @@ Sources:
 * [How to Fix Docker Permission Denied Error on Ubuntu](https://linuxhandbook.com/docker-permission-denied/)
 * [How to fix docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
 
-
+docker pull nipreps/fmriprep:<latest-version>
