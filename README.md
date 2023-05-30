@@ -64,6 +64,13 @@ visualization
 * FAIR
 * Prepared to use with tools like fMRIPrep
 
+## 3. Docker
+* [Using containers (Docker/Singularity) in science](https://neurohackweek.github.io/docker-for-scientists/)
+* [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
+* Optional: [Install Docker Desktop on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
+* [How to fix docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
+
+
 ## 4. fMRIPrep: Preprocessing Pipeline for fMRI Data
 * [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html)
 * [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html)
