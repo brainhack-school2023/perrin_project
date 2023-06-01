@@ -33,6 +33,7 @@ Sleep deprivation is commonplace in modern society, but little is known about th
 ## Tools & Methods
 * [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management
 * [DataLad](https://www.datalad.org/) for retrieval and version control of data
+* [https://www.neurodesk.org/](NeuroDesk) to use a flexible and scalable data analysis environment for reproducible neuroimaging
 * [BIDS-validator](https://bids-standard.github.io/bids-validator/) to check updated dataset integrity
 * [FMRIPrep](https://fmriprep.org/en/stable/) for data preprocessing
 * [Python](https://www.python.org/) for visualization (and possibly neuroimaging machine learning) 
@@ -61,21 +62,31 @@ visualization
 
 ## 3. BIDS-Validation: Reproducible Neuroimaging Organization
 * [The BIDS Starter Pack](https://bids-standard.github.io/bids-starter-kit/index.html)
+* [BIDS Validator](https://bids-standard.github.io/bids-validator/)
 * FAIR
 * Prepared to use with tools like fMRIPrep
 
-## 3. Docker
+## 4.a. Docker (could not use it due to limitations with my laptop, see section 4.b. for the alternative chosen)
 * [Using containers (Docker/Singularity) in science](https://neurohackweek.github.io/docker-for-scientists/)
 * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
 * Optional: [Install Docker Desktop on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
 * [How to fix docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
 
+## 4.b. NeuroDesk: Connecting to a flexible and scalable data analysis environment for reproducible neuroimaging.
+* [Getting Started with Brain Imaging Tools via the Neurodesktop Container](https://github.com/brainhack-school2022/dimitrijevic_project/blob/658c4f8bdadda289845feb707cd77c6a6363a43f/BrainHackCloud_steps/neurodesk_access.md)
+* [Neurodesk](https://www.neurodesk.org/) (instructions as of June 1st 2023): 
+  * Open 'Play' then 'Neurodesk Lab' (for keeping data across sessions)
+  * Choose the link closest to your location
+  * In the left panel under 'Softwares' load the fmriprep module
+  * In the 'Notebook' section launch 'Neurodesktop'
 
-## 4. fMRIPrep: Preprocessing Pipeline for fMRI Data
+## 5. fMRIPrep: Preprocessing Pipeline for fMRI Data
 * [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html)
 * [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html)
+* [Usage Notes](https://fmriprep.org/en/stable/usage.html)
+* Estimated runtime per subject on Neurodesk: (start at ~11 am, end at ~?)
 
-## 5. Python: Visualization of the data
+## 6. Python: Visualization of the data
 * TODO: Add two cool brain pictures (comparison normal sleep vs. sleep-deprived) once I have them
 
 ## (6. NiLearn: Build a Machine Learning model)
