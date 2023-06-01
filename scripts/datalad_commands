@@ -41,4 +41,4 @@ ml fmriprep
 # Preprocessing with FMRIPrep
 datalad run fmriprep input/ output/ participant \
 --participant-label 9001 --task-id rest \
---skip-bids-validation --fs-license-file 
+--skip-bids-validation --fs-license-file --low-mem
