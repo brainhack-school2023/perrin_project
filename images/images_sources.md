@@ -13,3 +13,5 @@
 [fMRIPrep logo](http://reproducibility.stanford.edu/resources/)
 
 [Python logo](https://communityblog.fedoraproject.org/help-port-python-packages-to-python-3/)
+
+[NeuroDesk logo](https://brainhack.org/global2020/project/project_64/)
