@@ -1,5 +1,7 @@
 [Programmers while Sleeping meme](https://www.thecoderpedia.com/blog/programming-memes/)
 
+[Brain amygdala and prefrontal cortex](https://igorminar.github.io/story-about-superpower-management/)
+
 [OpenNeuro logo](https://github.com/OpenNeuroOrg/openneuro)
 
 [GitHub logo](https://lthub.ubc.ca/guides/github-instructor-guide/)
