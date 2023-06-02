@@ -84,7 +84,7 @@ visualization
 * [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html)
 * [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html)
 * [Usage Notes](https://fmriprep.org/en/stable/usage.html)
-* Estimated runtime per subject on Neurodesk: (start at ~11 am, end at ~?)
+* Estimated runtime per subject on Neurodesk: (start at ~11 am, end at ~6 pm)
 
 ## 6. Python: Visualization of the data
 * TODO: Add two cool brain pictures (comparison normal sleep vs. sleep-deprived) once I have them
