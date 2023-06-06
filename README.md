@@ -1,102 +1,67 @@
-# BrainHack School 2023 Project
+---
+type: "project" # DON'T TOUCH THIS ! :)
+date: "2023-06-06" # Date you first upload your project.
+# Title of your project (we like creative title)
+title: "Effects of Sleepiness on Resting-State Connectivity"
 
-## Effects of Sleepiness on Resting-State Connectivity
+# List the names of the collaborators within the [ ]. If alone, simple put your name within []
+names: [Thomas Perrin]
 
-<p align="center">
-<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="300"/>
-</p>
- 
-## About Me
+# Your project GitHub repository URL
+github_repo: https://github.com/brainhack-school2023/perrin_project
+
+# If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
+website:
+
+# List +- 4 keywords that best describe your project within []. Note that the project summary also involves a number of key words. Those are listed on top of the [github repository](https://github.com/brainhack-school2020/project_template), click `manage topics`.
+# Please only lowercase letters
+tags: [sleep, rs-fMRI, BIDS, preprocessing, connectivity, open-science]
+
+# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects..
+
+summary: "Can functional connectivity predict sleep deprivation? This project aims to explore neuroimaging data organization to build a workflow from the acquisition of an open dataset to the visualization of brain connectivity. The pipeline will be detailed and carried out for one subject, using resting state fMRI to compare the result between normal sleep and sleep deprivation (less than 3 hours of sleep the previous night)."
+
+# If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
+# below with the extension.
+image: "bhs2020.png"
+---
+<!-- This is an html comment and this won't appear in the rendered page. You are now editing the "content" area, the core of your description. Everything that you can do in markdown is allowed below. We added a couple of comments to guide your through documenting your progress. -->
+
+## Project definition
+
+### Background
 
 <a href="https://github.com/Thomas-Pr">
    <img src="https://avatars.githubusercontent.com/u/102051242?v=4?s=100" width="100px;" alt=""/>
    <br /><sub><b>Thomas Perrin</b></sub>
 </a>
 
+Hello and welcome to my project! My name is Thomas Perrin, I am currently pursuing a Master of Engineering degree in Biomedical Engineering at Polytechnique Montreal. I have previously studied mostly medical devices and images analysis at IMT Atlantique in France. Exploring neuroimaging and learning about open-source tools is a new and inspiring part of my journey in Biomedical Engineering!
 
-Hello! My name is Thomas Perrin, I am currently studying to obtain a double degree in biomedical engineering at Polytechnique Montreal. At IMT Atlantique, my home institution in France, I studied mostly medical devices and medical images analysis. Yet, exploring neuroimaging and open-source tools so in-depth is a new and inspiring part of my journey in biomedical engineering!
+Sleep deprivation is commonplace in modern society, but little is known about the functional mechanisms and correlates of sleepiness in the awake brain. Sleepiness is a brain state with pervasive effects on cognitive and affective functioning ([Killgore, 2010, Tamm et al., 2020](#references)). Adult fMRI studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity ([Reidy et al., 2016](#references)), with inhibition of top-down-control in emotion ([Tamm et al., 2020](#references)). Therefore, it would be interesting to explore and predict whether a participant is sleep deprived or not based on a functional connectivity estimation.
 
+Main question: **Can resting-state functional connectivity predict sleep deprivation?**
 
-# Project Definition
+### Tools
 
-## Background
-Sleep deprivation is commonplace in modern society, but little is known about the functional mechanisms and correlates of sleepiness in the awake brain. Sleepiness is a brain state with pervasive effects on cognitive and affective functioning (Killgore, 2010, Tamm et al., 2020). Adult fMRI studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity (Reidy et al., 2016), with inhibition of top-down-control in emotion (Tamm et al., 2020). Therefore, it would be interesting to explore and predict whether a participant is sleep deprived or not based on a functional connectivity estimation.
+ * [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management.
+* [DataLad](https://www.datalad.org/) for retrieval and version control of data.
+* [Neurodesk](https://www.neurodesk.org/) to use a flexible and scalable data analysis environment for reproducible neuroimaging.
+* [BIDS-validator](https://bids-standard.github.io/bids-validator/) to check updated dataset integrity.
+* [FMRIPrep](https://fmriprep.org/en/stable/) for fMRI data preprocessing
+* [Python](https://www.python.org/) for dataset management and visualization (Nilearn, Pandas, NiBabel, Matplotlib, ...), in [Visual Studio Code](https://code.visualstudio.com/) and [Jupyter Notebook](https://jupyter.org/).
 
-## Main Question
-**Can resting-state functional connectivity predict sleep deprivation?**
+### Data
 
-## Data (TODO: Add link to the dataset)
 * Data used: [Resting-State fMRI from the Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old](https://openneuro.org/datasets/ds000201/versions/1.0.3). A functional brain imaging study where 86 healthy participants underwent MRI after normal sleep and partial sleep deprivation (only 3 hours of sleep) in a crossover design. Three experiments were performed investigating emotional mimicry, empathy for pain, and cognitive reappraisal, as well as resting state fMRI.
 * Fit with the research question: This study aimed to investigate the effects of partial sleep deprivation (PSD) on resting state brain connectivity, emotional contagion, empathy, and emotional regulation.
-* Obtained from: [OpenNeuro](https://openneuro.org/). The full dataset is multimodal (T1- and T2-weighted structural images, diffusion images, raw polysomnography data, task-based and resting state fMRI images). I will only use rs-fMRI data for my project.
+* Obtained from: [OpenNeuro](https://openneuro.org/). The full dataset is multimodal (T1- and T2-weighted structural images, diffusion images, raw polysomnography data, task-based and resting state fMRI images). 
+* Usage: For the reduced scope of this project, only the rs-fMRI data of the two sessions for one subject will be used, but the pipeline can then be used the same way to analyze more subjects. The full dataset structure and metadata files can be retrieved without downloading the heavy dataset thanks to DataLad. This is useful to update the dataset to be BIDS-compliant and analyze data for only one subject.
 
-## Tools & Methods
-* [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management
-* [DataLad](https://www.datalad.org/) for retrieval and version control of data
-* [https://www.neurodesk.org/](NeuroDesk) to use a flexible and scalable data analysis environment for reproducible neuroimaging
-* [BIDS-validator](https://bids-standard.github.io/bids-validator/) to check updated dataset integrity
-* [FMRIPrep](https://fmriprep.org/en/stable/) for data preprocessing
-* [Python](https://www.python.org/) for visualization (and possibly neuroimaging machine learning) 
+Note: An old page for this dataset can also be found on the deprecated website OpenfMRI ([A multimodal brain imaging dataset on sleep deprivation in young and old humans: The Sleepy Brain Project I](https://legacy.openfmri.org/dataset/ds000201/)).
 
-## Objectives
-* Familiarize myself with neuroimaging data organization and open science
-practices
-* Learn reproductible neuroimaging workflow from preprocessing to data
-visualization
-* Visualize and compare functional connectomes of resting-state networks
-* Prospect: Build a machine learning model
+### Deliverables
 
-
-# Progress Overview: Retrace my Steps
-
-## 1. OpenNeuro: Select the Dataset
-* 
-* The data was already converted from DICOM to NIfTI
-* TODO: Number of subjects, etc.
-* BIDS organization except for a few errors
-
-## 2. DataLad: Version Control the Dataset
-* [The DataLad Notebook](https://handbook.datalad.org/en/latest/)
-* Run the code to fix BIDS errors
-* (Optional: Use containers for maximal reproducibility)
-
-## 3. BIDS-Validation: Reproducible Neuroimaging Organization
-* [The BIDS Starter Pack](https://bids-standard.github.io/bids-starter-kit/index.html)
-* [BIDS Validator](https://bids-standard.github.io/bids-validator/)
-* FAIR
-* Prepared to use with tools like fMRIPrep
-
-## 4.a. Docker (could not use it due to limitations with my laptop, see section 4.b. for the alternative chosen)
-* [Using containers (Docker/Singularity) in science](https://neurohackweek.github.io/docker-for-scientists/)
-* [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
-* Optional: [Install Docker Desktop on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
-* [How to fix docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
-
-## 4.b. NeuroDesk: Connecting to a flexible and scalable data analysis environment for reproducible neuroimaging.
-* [Getting Started with Brain Imaging Tools via the Neurodesktop Container](https://github.com/brainhack-school2022/dimitrijevic_project/blob/658c4f8bdadda289845feb707cd77c6a6363a43f/BrainHackCloud_steps/neurodesk_access.md)
-* [Neurodesk](https://www.neurodesk.org/) (instructions as of June 1st 2023): 
-  * Open 'Play' then 'Neurodesk Lab' (for keeping data across sessions)
-  * Choose the link closest to your location
-  * In the left panel under 'Softwares' load the fmriprep module
-  * In the 'Notebook' section launch 'Neurodesktop'
-
-## 5. fMRIPrep: Preprocessing Pipeline for fMRI Data
-* [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html)
-* [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html)
-* [Usage Notes](https://fmriprep.org/en/stable/usage.html)
-* Estimated runtime per subject on Neurodesk: (start at ~11 am, end at ~6 pm)
-
-## 6. Python: Visualization of the data
-* TODO: Add two cool brain pictures (comparison normal sleep vs. sleep-deprived) once I have them
-
-## (6. NiLearn: Build a Machine Learning model)
-* TODO if enough time
-
-## 7. Git & GitHub: Version Control the Project
-* Updated throughout the previous steps.
-
-
-# Deliverables
 * A GitHub repository containing all the elements of the project (the repository you are currently in!)
 * A markdown file for the project description (the file you are currently reading!)
 * DataLad and Python code for updating the dataset to BIDS
@@ -104,23 +69,122 @@ visualization
 * A requirements.txt file to specify the Python environment
 * Jupyter notebook for visualization (and machine learning)
 
-## Organization of the Repository
-* Modules: Modules completed during the first weeks of BrainHack School.
-* data: Raw data for the project, not synced to source control because the dataset is too large.
-* docs: Documentation, including Markdown and reStructuredText (reST).
-* results: Results, including checkpoints, hdf5 files, pickle files, as well as figures and tables.
-* scripts: Scripts (Python, bash, .ipynb notebooks).
-* src: Reusable Python modules for the project (imports).
-* tests: Tests for the code.
+## Results
+
+### Progress overview: Retrace my Steps
+
+1. Git & GitHub: Version Control the Project.
+* The repository was updated throughout the following steps of the project.
+* Organization of the repository:
+  * Modules: Modules completed during the first weeks of BrainHack School.
+  * data: Raw data for the project, not synced to source control because the dataset is too large.
+  * docs: Documentation, including Markdown and reStructuredText (reST).
+  * results: Results, including figures (could also include checkpoints, hdf5 files, pickle files, and tables, had the project been more complex).
+  * scripts: Scripts (Python, bash, .ipynb notebooks).
+  * src: Reusable Python modules for the project (imports, empty for now).
+  * tests: Tests for the code.
+* Resources:
+  * [Using git and github](https://school-brainhack.github.io/modules/git_github/)
+  * [Version control with Git](https://gcapes.github.io/git-course/)
+  * [Introduction to Git and GitHub](https://emdupre.github.io/git-course/)
+  * [The Good Research Code Handbook](https://goodresearch.dev/) for the project template.
+
+2. OpenNeuro: Select the Dataset.
+* The data was already converted from DICOM to NIfTI.
+* BIDS organization except for a few errors (see [bids_validation](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/docs/bids_validation) folder).
+
+3. DataLad: Version Control the Dataset
+* The [OHBM Brainhack TrainTrack: DataLad](https://handbook.datalad.org/en/latest/code_from_chapters/OHBM.html), [The DataLad Notebook](https://handbook.datalad.org/en/latest/) and the use case [A basic automatically and computationally reproducible neuroimaging analysis](https://handbook.datalad.org/en/latest/usecases/reproducible_neuroimaging_analysis_simple.html) were the most useful tools to get me started.
+* [OpenNeuro Quickstart Guide: Accessing OpenNeuro datasets via DataLad](https://handbook.datalad.org/en/latest/usecases/openneuro.html) to properly  obtain the dataset with DataLad.
+* Organization of the dataset following [the YODA principles](https://handbook.datalad.org/en/latest/basics/101-130-yodaproject.html) and *datalad run* to capture everything relevant to reproduce the analysis, i.e. to run the code to fix BIDS errors
+
+4. BIDS-Validation: Reproducible Neuroimaging Organization.
+* [The BIDS Starter Pack](https://bids-standard.github.io/bids-starter-kit/index.html)
+* [BIDS Validator](https://bids-standard.github.io/bids-validator/)
+* Prepare the dataset to use with tools like fMRIPrep.
+
+5. NeuroDesk: Connecting to a flexible and scalable data analysis environment for reproducible neuroimaging.
+* [Getting Started with Brain Imaging Tools via the Neurodesktop Container](https://github.com/brainhack-school2022/dimitrijevic_project/blob/658c4f8bdadda289845feb707cd77c6a6363a43f/BrainHackCloud_steps/neurodesk_access.md)
+* Guide to use [Neurodesk](https://www.neurodesk.org/) for this project (instructions as of June 1st 2023): 
+  * Open 'Play' then 'Neurodesk Lab' (for keeping data across sessions)
+  * Choose the link closest to your location.
+  * In the left panel under 'Softwares' load the fmriprep module.
+  * In the 'Notebook' section launch 'Neurodesktop'.
+
+6. fMRIPrep: Preprocessing Pipeline for fMRI Data.
+* [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html).
+* [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html).
+* [Usage Notes](https://fmriprep.org/en/stable/usage.html).
+* [Outputs of *fMRIPrep*](https://fmriprep.org/en/stable/outputs.html) to have a description of the output dataset to use for visualization and analysis. 
+* Estimated runtime per subject on Neurodesk: 6 to 7 hours.
+
+7. Python: Visualization of the data.
+* The access to the data has been done following the format of datasets using [nilearn.datasets.fetch_openneuro_dataset](https://nilearn.github.io/dev/modules/generated/nilearn.datasets.fetch_openneuro_dataset.html). [PyBIDS](https://bids-standard.github.io/pybids/) was also considered but in the end not used to work with BIDS datasets. 
+* TODO: Add two cool brain pictures (comparison normal sleep vs. sleep-deprived) once I have them
+
+Note:
+
+Step 5. was originally intended to be executed using Docker, but after encountering storage and outdated software issues with my laptop, Neurodesk was used to finish the project in time. Here are the resources used before the issues prevented the final installation:
+* [Using containers (Docker/Singularity) in science](https://neurohackweek.github.io/docker-for-scientists/)
+* [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
+* Optional: [Install Docker Desktop on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
+* [NiPreps: Executing with Docker](https://www.nipreps.org/apps/docker/)
+* And for maximal reproducibility with containers, the DataLad use case [An automatically and computationally reproducible neuroimaging analysis from scratch](https://handbook.datalad.org/en/latest/usecases/reproducible_neuroimaging_analysis.html)
+
+### Tools I learned during this project
+
+* **Neuroimaging:** Functional MRI principles, organization for neuroimaging data, and visualization of functional connectivity for resting-state networks.
+* **Open science workflow:** Tools to create a reproductible neuroimaging workflow from preprocessing to data visualization.
+
+### Results
+
+#### Deliverable 1: GitHub repository
+
+The GitHub repository contains all the elements of the project.
+
+#### Deliverable 2: project report
+
+The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/README.md) markdown file (the file you are currently reading!) describes the project. It can be found on [my BrainHack School 2023 repository](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/README.md) as well as the [BrainHack School website](https://school-brainhack.github.io/project/). 
+
+#### Deliverable 3: dataset manipulation scripts
+
+* A Python script ([bids_fix.py](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/bids_fix.py)) to update the dataset to be BIDS-compliant.
+* A Markdown file ([datalad_commands](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/datalad_commands)) containing the DataLad bash code to obtain the dataset, run the above-mentioned Python script, and run the fMRI preprocessing, all using version-control with DataLad.
 
 
-# Conclusion?
+
+*TODO: Add images of the BIDS validation here*
 
 
 
-# References
-* Gustav Nilsonne and Sandra Tamm and Paolo d’Onofrio and Hanna Å Thuné and Johanna Schwarz and Catharina Lavebratt and Jia Jia Liu and Kristoffer NT Månsson and Tina Sundelin and John Axelsson and Peter Fransson and Göran Kecklund and Håkan Fischer and Mats Lekander and Torbjörn Åkerstedt (2020). The Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old. OpenNeuro. [Dataset] doi: 10.18112/openneuro.ds000201.v1.0.3
-* Killgore WD. Effects of sleep deprivation on cognition. Prog Brain Res. 2010;185:105-29. doi: 10.1016/B978-0-444-53702-7.00007-5. PMID: 21075236.
-* Reidy BL, Hamann S, Inman C, Johnson KC, Brennan PA. Decreased sleep duration is associated with increased fMRI responses to emotional faces in children. Neuropsychologia. 2016 Apr;84:54-62. doi: 10.1016/j.neuropsychologia.2016.01.028. Epub 2016 Jan 25. PMID: 26821063.
-* Tamm S, Schwarz J, Thuné H, Kecklund G, Petrovic P, Åkerstedt T, Fischer H, Lekander M, Nilsonne G. A combined fMRI and EMG study of emotional contagion following partial sleep deprivation in young and older humans. Sci Rep. 2020 Oct 21;10(1):17944. doi: 10.1038/s41598-020-74489-9. PMID: 33087746; PMCID: PMC7578048.
+#### Deliverable 4: analysis notebook
 
+A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/sleep_connectivity.ipynb)) for visualization of connectomes and analysis. The results can also be found [here](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/results).
+
+
+
+*TODO: Add images of the results (correlation matrices and connectomes) here*
+
+
+
+
+#### Deliverable 5: final project presentation
+
+Slides ([slides_name.pptx](TODO: Add link)) for the final project presentation to conclude the month of BrainHack School, following the provided template.
+
+## Conclusion and acknowledgement
+
+With more time and resources, the prospect of this project would have been to process more subjects and use [NiLearn](https://nilearn.github.io/stable/index.html) to build a Machine Learning model and find out if resting-state functional connectivity could effectively predict sleep deprivation.
+
+A special thanks goes to the TAs at Polytechnique Montréal, Jan and Andjela, for their tips and guidance, especially for pointing me to the project-saving tool Neurodesk when all other options had failed.
+
+Also, the [NeuroStars](https://neurostars.org/) forum was helpful when I encountered issues with BIDS validation and fMRIPrep.
+
+Finally, I would like to thank the BrainHack School organizers who have built this course and modules. It really provides guidance on how to learn the most useful tools for neuroimaging and open-science, in a way that is very efficient to actively acquire new skills and knowledge.
+
+## References
+
+* Gustav Nilsonne and Sandra Tamm and Paolo d’Onofrio and Hanna Å Thuné and Johanna Schwarz and Catharina Lavebratt and Jia Jia Liu and Kristoffer NT Månsson and Tina Sundelin and John Axelsson and Peter Fransson and Göran Kecklund and Håkan Fischer and Mats Lekander and Torbjörn Åkerstedt (2020). The Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old. OpenNeuro. [Dataset]() [doi:10.18112/openneuro.ds000201.v1.0.3](https://doi.org/10.18112/openneuro.ds000201.v1.0.3)
+* Killgore WD. Effects of sleep deprivation on cognition. Prog Brain Res. 2010;185:105-29. [doi:10.1016/B978-0-444-53702-7.00007-5](https://doi.org/10.1016/b978-0-444-53702-7.00007-5). PMID: 21075236.
+* Reidy BL, Hamann S, Inman C, Johnson KC, Brennan PA. Decreased sleep duration is associated with increased fMRI responses to emotional faces in children. Neuropsychologia. 2016 Apr;84:54-62. [doi:10.1016/j.neuropsychologia.2016.01.028](https://doi.org/10.1016/j.neuropsychologia.2016.01.028). Epub 2016 Jan 25. PMID: 26821063.
+* Tamm S, Schwarz J, Thuné H, Kecklund G, Petrovic P, Åkerstedt T, Fischer H, Lekander M, Nilsonne G. A combined fMRI and EMG study of emotional contagion following partial sleep deprivation in young and older humans. Sci Rep. 2020 Oct 21;10(1):17944. [sdoi:10.1038/s41598-020-74489-9](https://doi.org/10.1038/s41598-020-74489-9). PMID: 33087746; PMCID: PMC7578048.
