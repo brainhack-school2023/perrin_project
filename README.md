@@ -44,7 +44,7 @@ Main question: **Can resting-state functional connectivity predict sleep depriva
 
 ### Tools
 
- * [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management.
+* [Git](https://git-scm.com/) and [GitHub](https://github.com/) for project management.
 * [DataLad](https://www.datalad.org/) for retrieval and version control of data.
 * [Neurodesk](https://www.neurodesk.org/) to use a flexible and scalable data analysis environment for reproducible neuroimaging.
 * [BIDS-validator](https://bids-standard.github.io/bids-validator/) to check updated dataset integrity.
@@ -73,7 +73,7 @@ Note: An old page for this dataset can also be found on the deprecated website O
 
 ### Progress overview: Retrace my Steps
 
-1. Git & GitHub: Version Control the Project.
+**1. Git & GitHub: Version Control the Project.**
   * The repository was updated throughout the following steps of the project.
   * Organization of the repository:
     * Modules: Modules completed during the first weeks of BrainHack School.
@@ -88,21 +88,21 @@ Note: An old page for this dataset can also be found on the deprecated website O
     * [Introduction to Git and GitHub](https://emdupre.github.io/git-course/)
     * [The Good Research Code Handbook](https://goodresearch.dev/) for the project template.
 
-2. OpenNeuro: Select the Dataset.
+**2. OpenNeuro: Select the Dataset.**
   * The data was already converted from DICOM to NIfTI.
   * BIDS organization except for a few errors (see [bids_validation](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/docs/bids_validation) folder).
 
-3. DataLad: Version Control the Dataset
+**3. DataLad: Version Control the Dataset**
   * The [OHBM Brainhack TrainTrack: DataLad](https://handbook.datalad.org/en/latest/code_from_chapters/OHBM.html), [The DataLad Notebook](https://handbook.datalad.org/en/latest/) and the use case [A basic automatically and computationally reproducible neuroimaging analysis](https://handbook.datalad.org/en/latest/usecases/reproducible_neuroimaging_analysis_simple.html) were the most useful tools to get me started.
   * [OpenNeuro Quickstart Guide: Accessing OpenNeuro datasets via DataLad](https://handbook.datalad.org/en/latest/usecases/openneuro.html) to properly  obtain the dataset with DataLad.
   * Organization of the dataset following [the YODA principles](https://handbook.datalad.org/en/latest/basics/101-130-yodaproject.html) and *datalad run* to capture everything relevant to reproduce the analysis, i.e. to run the code to fix BIDS errors
 
-4. BIDS-Validation: Reproducible Neuroimaging Organization.
+**4. BIDS-Validation: Reproducible Neuroimaging Organization.**
   * [The BIDS Starter Pack](https://bids-standard.github.io/bids-starter-kit/index.html)
   * [BIDS Validator](https://bids-standard.github.io/bids-validator/)
   * Prepare the dataset to use with tools like fMRIPrep.
 
-5. NeuroDesk: Connecting to a flexible and scalable data analysis environment for reproducible neuroimaging.
+**5. NeuroDesk: Connecting to a flexible and scalable data analysis environment for reproducible neuroimaging.**
   * [Getting Started with Brain Imaging Tools via the Neurodesktop Container](https://github.com/brainhack-school2022/dimitrijevic_project/blob/658c4f8bdadda289845feb707cd77c6a6363a43f/BrainHackCloud_steps/neurodesk_access.md)
   * Guide to use [Neurodesk](https://www.neurodesk.org/) for this project (instructions as of June 1st 2023): 
     * Open 'Play' then 'Neurodesk Lab' (for keeping data across sessions)
@@ -110,14 +110,14 @@ Note: An old page for this dataset can also be found on the deprecated website O
     * In the left panel under 'Softwares' load the fmriprep module.
     * In the 'Notebook' section launch 'Neurodesktop'.
 
-6. fMRIPrep: Preprocessing Pipeline for fMRI Data.
+**6. fMRIPrep: Preprocessing Pipeline for fMRI Data.**
   * [Getting started with BIDS, fMRIPrep, MRIQC](https://sarenseeley.github.io/BIDS-fmriprep-MRIQC.html).
   * [BIDS App Tutorial #2: fMRIPrep](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep.html).
   * [Usage Notes](https://fmriprep.org/en/stable/usage.html).
   * [Outputs of *fMRIPrep*](https://fmriprep.org/en/stable/outputs.html) to have a description of the output dataset to use for visualization and analysis. 
   * Estimated runtime per subject on Neurodesk: 6 to 7 hours.
 
-7. Python: Visualization of the data.
+**7. Python: Visualization of the data.**
   * The access to the data has been done following the format of datasets using [nilearn.datasets.fetch_openneuro_dataset](https://nilearn.github.io/dev/modules/generated/nilearn.datasets.fetch_openneuro_dataset.html). [PyBIDS](https://bids-standard.github.io/pybids/) was also considered but in the end not used to work with BIDS datasets. 
   * TODO: Add two cool brain pictures (comparison normal sleep vs. sleep-deprived) once I have them
 
