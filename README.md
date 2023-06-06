@@ -84,7 +84,6 @@ Note: An old page for this dataset can also be found on the deprecated website O
   * src: Reusable Python modules for the project (imports, empty for now).
   * tests: Tests for the code.
 * Resources:
-  * [Using git and github](https://school-brainhack.github.io/modules/git_github/)
   * [Version control with Git](https://gcapes.github.io/git-course/)
   * [Introduction to Git and GitHub](https://emdupre.github.io/git-course/)
   * [The Good Research Code Handbook](https://goodresearch.dev/) for the project template.
