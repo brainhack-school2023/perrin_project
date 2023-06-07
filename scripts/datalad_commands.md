@@ -1,3 +1,5 @@
+# Dataset setup
+
 Create a dataset
 ```
 datalad create -c yoda --dataset preprocess
@@ -41,6 +43,8 @@ Summary of total content present locally
 datalad status --annex all
 ```
 
+# Fix BIDS errors
+
 Run script to fix BIDS errors (execute inside of preprocess directory)
 ```
 datalad run -m "Fix BIDS errors in original dataset" \
@@ -49,6 +53,8 @@ datalad run -m "Fix BIDS errors in original dataset" \
 -o "sub-*/ses-*/sub-*_ses-*_scans.tsv" \
 python3 code/bids_fix.py
 ```
+
+# Preprocessing with fMRIPrep
 
 Download data only for first subject (execute inside of input directory)cd 
 ```
@@ -62,7 +68,7 @@ Activate fmrprep on NeuroDesk
 ml fmriprep
 ```
 
-Preprocessing with FMRIPrep
+Run preprocessing
 ```
 datalad run fmriprep input/ output/ participant \
 --participant-label 9001 --task-id rest \
