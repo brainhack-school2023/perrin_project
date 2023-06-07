@@ -8,6 +8,7 @@ import pandas as pd
 
 from pathlib import Path
 
+# Note:
 # It is recommended to craft the command such that it can run in the root directory of the dataset that the command will be recorded in. 
 # However, as long as the command is executed somewhere underneath the dataset root, 
 # the exact location will be recorded relative to the dataset root.
