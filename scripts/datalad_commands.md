@@ -11,6 +11,7 @@ cp ../scripts/bids_fix.py preprocess/code/bids_fix.py
 Enter the dataset
 ```
 cd preprocess
+```
 
 Save the fix script move
 ```
@@ -49,19 +50,19 @@ datalad run -m "Fix BIDS errors in original dataset" \
 python3 code/bids_fix.py
 ```
 
-# Download data only for first subject (execute inside of input directory)cd 
+Download data only for first subject (execute inside of input directory)cd 
 ```
 datalad get sub-9001/ses-*/anat/* \
 sub-9001/ses-*/fmap/* \
 sub-9001/ses-*/func/*-rest_* \
 ```
 
-# Activate fmrprep on NeuroDesk
+Activate fmrprep on NeuroDesk
 ```
 ml fmriprep
 ```
 
-# Preprocessing with FMRIPrep
+Preprocessing with FMRIPrep
 ```
 datalad run fmriprep input/ output/ participant \
 --participant-label 9001 --task-id rest \
