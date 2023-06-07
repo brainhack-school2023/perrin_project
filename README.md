@@ -173,7 +173,7 @@ Slides ([slides_name.pptx](TODO: Add link)) for the final project presentation t
 
 ## Conclusion and acknowledgement
 
-With more time and resources, the prospect of this project would have been to process more subjects and use [NiLearn](https://nilearn.github.io/stable/index.html) to build a Machine Learning model and find out if resting-state functional connectivity could effectively predict sleep deprivation.
+With more time and resources, the prospect of this project would have been to process more subjects (using a HPC cluster) and use [NiLearn](https://nilearn.github.io/stable/index.html) to build a Machine Learning model and find out if resting-state functional connectivity could effectively predict sleep deprivation.
 
 A special thanks goes to the TAs at Polytechnique Montréal, Jan and Andjela, for their tips and guidance, especially for pointing me to the project-saving tool Neurodesk when all other options had failed.
 
