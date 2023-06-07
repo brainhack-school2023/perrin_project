@@ -80,7 +80,7 @@ def fix_beh_tsv(input_path):
 ## Error 4: [Code 90] SIDECAR_WITHOUT_DATAFILE
 # A json sidecar file was found without a corresponding data file
 
-# Error due to DataLad because I did not get the files yet?
+# Error due to DataLad because the big files were not retrieved yet
 
 
 def fix_scans_filename(input_path):
