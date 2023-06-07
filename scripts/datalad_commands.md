@@ -1,5 +1,7 @@
 Create a dataset
-'''datalad create -c yoda --dataset preprocess'''
+'''
+datalad create -c yoda --dataset preprocess
+'''
 
 # Copy the fix script to code (inside the data directory)
 cp ../scripts/bids_fix.py preprocess/code/bids_fix.py
