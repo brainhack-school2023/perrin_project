@@ -57,21 +57,21 @@ Main question: **Can resting-state functional connectivity predict sleep depriva
 
 ### Data
 
-* Data used: [Resting-State fMRI from the Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old](https://openneuro.org/datasets/ds000201/versions/1.0.3). A functional brain imaging study where 86 healthy participants underwent MRI after normal sleep and partial sleep deprivation (only 3 hours of sleep) in a crossover design. Three experiments were performed investigating emotional mimicry, empathy for pain, and cognitive reappraisal, as well as resting state fMRI.
+* Data used: [Resting-State fMRI from the Stockholm Sleepy Brain Study: Effects of Sleep Deprivation on Cognitive and Emotional Processing in Young and Old](https://openneuro.org/datasets/ds000201/versions/1.0.3). A functional brain imaging study where 86 healthy participants underwent MRI after normal sleep and partial sleep deprivation (only 3 hours of sleep) in a crossover design. Three experiments were performed investigating emotional mimicry, empathy for pain, and cognitive reappraisal, as well as resting state fMRI (rs-fMRI).
 * Fit with the research question: This study aimed to investigate the effects of partial sleep deprivation (PSD) on resting state brain connectivity, emotional contagion, empathy, and emotional regulation.
 * Obtained from: [OpenNeuro](https://openneuro.org/). The full dataset is multimodal (T1- and T2-weighted structural images, diffusion images, raw polysomnography data, task-based and resting state fMRI images). 
-* Usage: For the reduced scope of this project, only the rs-fMRI data of the two sessions for one subject will be used, but the pipeline can then be used the same way to analyze more subjects. The full dataset structure and metadata files can be retrieved without downloading the heavy dataset thanks to DataLad. This is useful to update the dataset to be BIDS-compliant and analyze data for only one subject.
+* Usage: For the reduced scope of this project, only the rs-fMRI data of the two sessions for one subject will be used, but the pipeline can then be used in the same way to analyze more subjects. The full dataset structure and metadata files can be retrieved without downloading the heavy dataset thanks to DataLad. This is useful to update the dataset to be BIDS-compliant and analyze data for only one subject.
 
 Note: An old page for this dataset can also be found on the deprecated website OpenfMRI ([A multimodal brain imaging dataset on sleep deprivation in young and old humans: The Sleepy Brain Project I](https://legacy.openfmri.org/dataset/ds000201/)).
 
 ### Deliverables
 
-* A GitHub repository containing all the elements of the project (the repository you are currently in!)
-* A markdown file for the project description (the file you are currently reading!)
-* DataLad and Python code for updating the dataset to BIDS
-* Bash code for fMRI preprocessing
-* A requirements.txt file to specify the Python environment
-* Jupyter notebook for visualization (and machine learning)
+* A GitHub repository containing all the elements of the project
+* A markdown file for the project description
+* A Python script to update the dataset to be BIDS-compliant
+* A markdown file providing the Bash commands to download the dataset, run the Python script, and run fMRI preprocessing, all using DataLad
+* A Jupyter Notebook for visualization (and machine learning)
+* A requirements.txt file to specify the Python environment for the script and the notebook
 
 ## Results
 
@@ -81,12 +81,12 @@ Note: An old page for this dataset can also be found on the deprecated website O
   * The repository was updated throughout the following steps of the project.
   * Organization of the repository:
     * Modules: Modules completed during the first weeks of BrainHack School.
-    * data: Raw data for the project, not synced to source control because the dataset is too large.
-    * docs: Documentation, including Markdown and reStructuredText (reST).
+    * data: Raw data for the project, not synced to source control because the dataset is too large for Git.
+    * docs: Documentation (project presentations, could also include Markdown and reStructuredText (reST) files).
     * results: Results, including figures (could also include checkpoints, hdf5 files, pickle files, and tables, had the project been more complex).
     * scripts: Scripts (Python, bash, .ipynb notebooks).
     * src: Reusable Python modules for the project (imports, empty for now).
-    * tests: Tests for the code.
+    * tests: Tests for the code (empty for now).
   * Resources:
     * [Version control with Git](https://gcapes.github.io/git-course/)
     * [Introduction to Git and GitHub](https://emdupre.github.io/git-course/)
@@ -104,10 +104,10 @@ Note: An old page for this dataset can also be found on the deprecated website O
 **4. BIDS-Validation: Reproducible Neuroimaging Organization.**
   * [The BIDS Starter Pack](https://bids-standard.github.io/bids-starter-kit/index.html)
   * [BIDS Validator](https://bids-standard.github.io/bids-validator/)
-  * Prepare the dataset to use with tools like fMRIPrep.
+  * Prepare the dataset to use with tools like fMRIPrep, see [Deliverable 3](#results).
 
 **5. NeuroDesk: Connecting to a flexible and scalable data analysis environment for reproducible neuroimaging.**
-  * [Getting Started with Brain Imaging Tools via the Neurodesktop Container](https://github.com/brainhack-school2022/dimitrijevic_project/blob/658c4f8bdadda289845feb707cd77c6a6363a43f/BrainHackCloud_steps/neurodesk_access.md)
+  * [Getting Started with Brain Imaging Tools via the Neurodesktop Container](https://github.com/brainhack-school2022/dimitrijevic_project/blob/658c4f8bdadda289845feb707cd77c6a6363a43f/BrainHackCloud_steps/neurodesk_access.md) by [Andjela Dimitrijevic](https://github.com/Andjelaaaa).
   * Guide to use [Neurodesk](https://www.neurodesk.org/) for this project (instructions as of June 1st 2023): 
     * Open 'Play' then 'Neurodesk Lab' (for keeping data across sessions)
     * Choose the link closest to your location.
@@ -127,11 +127,11 @@ Note: An old page for this dataset can also be found on the deprecated website O
 Note:
 
 Step 5. was originally intended to be executed using Docker, but after encountering storage and outdated software issues with my laptop, Neurodesk was used to finish the project in time. Here are the resources used before the issues prevented the final installation:
-  * [Using containers (Docker/Singularity) in science](https://neurohackweek.github.io/docker-for-scientists/)
-  * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
-  * Optional: [Install Docker Desktop on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/)
+  * [Using containers (Docker/Singularity) in science](https://neurohackweek.github.io/docker-for-scientists/).
+  * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository.)
+  * Optional: [Install Docker Desktop on Ubuntu](https://docs.docker.com/desktop/install/ubuntu/).
   * [NiPreps: Executing with Docker](https://www.nipreps.org/apps/docker/)
-  * And for maximal reproducibility with containers, the DataLad use case [An automatically and computationally reproducible neuroimaging analysis from scratch](https://handbook.datalad.org/en/latest/usecases/reproducible_neuroimaging_analysis.html)
+  * And for maximal reproducibility with containers, the DataLad use case [An automatically and computationally reproducible neuroimaging analysis from scratch](https://handbook.datalad.org/en/latest/usecases/reproducible_neuroimaging_analysis.html).
 
 ### Tools I learned during this project
 
@@ -146,7 +146,7 @@ The GitHub repository contains all the elements of the project.
 
 #### Deliverable 2: project report
 
-The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/README.md) markdown file (the file you are currently reading!) describes the project. It can be found on [my BrainHack School 2023 repository](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/README.md) as well as the [BrainHack School website](https://school-brainhack.github.io/project/). 
+The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/README.md) markdown file describes the project. It can be found on [my BrainHack School 2023 repository](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/README.md) as well as the [BrainHack School website](https://school-brainhack.github.io/project/). 
 
 #### Deliverable 3: dataset manipulation scripts
 
