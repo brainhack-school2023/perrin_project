@@ -35,7 +35,7 @@ image: "bhs2020.png"
 
 <a href="https://github.com/Thomas-Pr">
    <img src="https://avatars.githubusercontent.com/u/102051242?v=4?s=100" width="100px;" alt=""/>
-   <br /><sub><b>Thomas Perrin</b></sub><br>
+   <br /><sub><b>Thomas Perrin</b></sub>
 </a>
 
 Hello and welcome to my project! My name is Thomas Perrin, I am currently pursuing a Master of Engineering degree in Biomedical Engineering at Polytechnique Montreal. I have previously studied mostly medical devices and images analysis at IMT Atlantique in France. Exploring neuroimaging and learning about open-source tools is a new and inspiring part of my journey in Biomedical Engineering!
@@ -170,22 +170,26 @@ A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-scho
 
 The results obtained are presented below. The first type of figure obtained is a correlation matrix, the second is a connectome.
 
-On the left are from the first session for subject 1, which corresponds to normal sleep, the results on the right correspond to sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition.
+On the left are from the first session for subject 1, which corresponds to normal sleep, the results on the right correspond to partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition.
 
 <p align="center">
-<img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" title="Session 1: Sleep alt=""/>
-<img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png" width="400px;" alt=""/>
+<img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" title="Correlation matrix for Session 1 (Normal Sleep)" alt=""/>
+<img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png" width="400px;" title="Correlation matrix for Session 2 (Partial Sleep Deprivation)" alt=""/>
 </p>
 
 <p align="center">
-<img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" alt=""/>
-<img src="results/connectivity/ses-2-sleep-deprived-connectome_5.png" width="400px;" alt=""/>
+<img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" title="Connectome for Session 1 (Normal Sleep)" alt=""/>
+<img src="results/connectivity/ses-2-sleep-deprived-connectome_5.png" width="400px;" title="Connectome for Session 2 (Partial Sleep Deprivation)" alt=""/>
 </p>
 
 <p align="center">
 <img src="results/connectivity/correlation-matrix-diff.png"
-width="400px;" alt=""/>
+width="400px;" title="Difference between the two correlation matrices" alt=""/>
 </p>
+
+Adult fMRI studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity. Therefore, the expected result is to see differences in functional connectivity in the amygdala and the prefrontal cortex.
+
+However, this analysis has only been done on one subject. 
 
 #### Deliverable 5: final project presentation
 
@@ -193,9 +197,11 @@ Slides ([Perrin_Thomas_Project_Wrap_Up.pdf](https://github.com/brainhack-school2
 
 ## Conclusion and acknowledgement
 
-With more time and resources, the prospect of this project would have been to process more subjects (using a HPC cluster) and use [NiLearn](https://nilearn.github.io/stable/index.html) to build a Machine Learning model and find out if resting-state functional connectivity could effectively predict sleep deprivation.
+The objectives of the project, which were to learn about neuroimaging tools and open science, and to set up the workflow from data retrieval to visualization, were completed. Although the results are limited to only one subject, the possibility to analyze at least one subject was encouraging to envision a larger analysis in order to answer the main question properly.
 
-A special thanks goes to the TAs at Polytechnique Montréal, Jan and Andjela, for their tips and guidance, especially for pointing me to the project-saving tool Neurodesk when all other options had failed.
+With more time and resources, the prospect of this project would have been to process more subjects, using a High Performance Computing infrastructure such as [Alliance Canada](https://alliancecan.ca/en) or [Brainhack cloud](https://brainhack.org/brainhack_cloud/tutorials/hpc/). This additional data would have been used to build a Machine Learning model with [NiLearn](https://nilearn.github.io/stable/index.html) and find out if resting-state functional connectivity could effectively predict sleep deprivation.
+
+A special thanks goes to the TAs at Polytechnique Montreal, Jan and Andjela, for their tips and guidance, especially for pointing me to the project-saving tool Neurodesk when all other options had failed.
 
 Also, the [NeuroStars](https://neurostars.org/) forum was helpful when I encountered issues with BIDS validation and fMRIPrep.
 
