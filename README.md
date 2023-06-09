@@ -152,8 +152,7 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 <p align="center">
 
 <div class="txtimg">
-<img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" alt=""/>
-<em>BIDS-Validator errors before fix</em>
+<img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" title="BIDS-Validator errors before fix" alt=""/>
 </div>
 
 <div class="txtimg">
