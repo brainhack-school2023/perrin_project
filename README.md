@@ -31,12 +31,16 @@ image: "bhs2020.png"
 
 ### Background
 
+#### About Me
+
 <a href="https://github.com/Thomas-Pr">
    <img src="https://avatars.githubusercontent.com/u/102051242?v=4?s=100" width="100px;" alt=""/>
    <br /><sub><b>Thomas Perrin</b></sub>
 </a>
 
 Hello and welcome to my project! My name is Thomas Perrin, I am currently pursuing a Master of Engineering degree in Biomedical Engineering at Polytechnique Montreal. I have previously studied mostly medical devices and images analysis at IMT Atlantique in France. Exploring neuroimaging and learning about open-source tools is a new and inspiring part of my journey in Biomedical Engineering!
+
+#### The project
 
 Sleep deprivation is commonplace in modern society, but little is known about the functional mechanisms and correlates of sleepiness in the awake brain. Sleepiness is a brain state with pervasive effects on cognitive and affective functioning ([Killgore, 2010, Tamm et al., 2020](#references)). Adult fMRI studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity ([Reidy et al., 2016](#references)), with inhibition of top-down-control in emotion ([Tamm et al., 2020](#references)). Therefore, it would be interesting to explore and predict whether a participant is sleep deprived or not based on a functional connectivity estimation.
 
@@ -148,7 +152,7 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 
 * A Python script ([bids_fix.py](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/bids_fix.py)) to update the dataset to be BIDS-compliant.
 * A Markdown file ([datalad_commands](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/datalad_commands)) containing the DataLad bash code to obtain the dataset, run the above-mentioned Python script, and run the fMRI preprocessing, all using version-control with DataLad.
-* Just below are the results using BIDS Validator before fixing the errors by and after running the script. The two errors remaining are explained by the way the dataset was retrieved using DataLad explanations (the dataset's structure is there but the big files are not downloaded).
+* Just below are the results using BIDS Validator before fixing the errors by and after running the script. The two errors remaining are explained by the way the dataset was retrieved using DataLad (the dataset's structure is there but the big files are not downloaded), as shown on the screenshot from the [DataLad FAQ](https://handbook.datalad.org/en/latest/basics/101-180-FAQ.html) below.
 
 <p align="center">
 <img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" title="BIDS Validator errors before fix" alt=""/>
@@ -164,7 +168,7 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 
 A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/sleep_connectivity.ipynb)) for visualization of connectomes and analysis. The results can also be found [here](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/results).
 
-The results obtained are presented below. The first figure obtained is a correlation matrix, the second is a connectome.
+The results obtained are presented below. The first type of figure obtained is a correlation matrix, the second is a connectome.
 
 On the left are from the first session for subject 1, which corresponds to normal sleep, the results on the right correspond to sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition.
 
