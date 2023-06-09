@@ -2,16 +2,12 @@
 
 # Effects of Sleepiness on Resting-State Connectivity
 
-Keywords: sleep, rs-fMRI, BIDS, preprocessing, connectivity, open-science
-
-# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects..
-
 ## Summary:
 
 Can functional connectivity predict sleep deprivation? This project aims to explore neuroimaging data organization to build a workflow from the acquisition of an open dataset to the visualization of brain connectivity. The pipeline will be detailed and carried out for one subject, using resting state fMRI to compare the result between normal sleep and sleep deprivation (less than 3 hours of sleep the previous night).
 
-# If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
-# below with the extension.
+Keywords: sleep, rs-fMRI, BIDS, preprocessing, connectivity, open-science
+
 <p align="center">
 <img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="400px;" title="Programming Memes while sleeping" alt=""/>
 </p>
