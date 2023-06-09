@@ -199,7 +199,7 @@ Adult fMRI studies have demonstrated associations between restricted sleep and a
 
 The atlas used to define the regions of interest is the MSDL brain Probabilistic atlas available with Nilearn. A threshold has been set to keep only the 5% of edges with the highest values and make the connectomes easier to read.
 
-The biggest visible differences are:
+The most visible differences are:
 * Between the right anterior intraparietal sulcus (R Ant IPS), with functions related to perceptual-motor coordination and visual attention, and the default mode network (DMN).
 * Between the right insular cortex (R Ins), believed to be involved in consciousness and emotion, and the DMN.
 * Between the different parts of the DMN.
