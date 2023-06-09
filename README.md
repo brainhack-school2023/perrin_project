@@ -35,7 +35,7 @@ image: "bhs2020.png"
 
 <a href="https://github.com/Thomas-Pr">
    <img src="https://avatars.githubusercontent.com/u/102051242?v=4?s=100" width="100px;" alt=""/>
-   <br /><sub><b>Thomas Perrin</b></sub>
+   <br /><sub><b>Thomas Perrin</b></sub><br>
 </a>
 
 Hello and welcome to my project! My name is Thomas Perrin, I am currently pursuing a Master of Engineering degree in Biomedical Engineering at Polytechnique Montreal. I have previously studied mostly medical devices and images analysis at IMT Atlantique in France. Exploring neuroimaging and learning about open-source tools is a new and inspiring part of my journey in Biomedical Engineering!
