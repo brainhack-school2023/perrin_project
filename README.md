@@ -148,6 +148,7 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 
 * A Python script ([bids_fix.py](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/bids_fix.py)) to update the dataset to be BIDS-compliant.
 * A Markdown file ([datalad_commands](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/datalad_commands)) containing the DataLad bash code to obtain the dataset, run the above-mentioned Python script, and run the fMRI preprocessing, all using version-control with DataLad.
+* Just below are the results using BIDS Validator before fixing the errors by and after running the script. The two errors remaining are explained by the way the dataset was retrieved using DataLad explanations (the dataset's structure is there but the big files are not downloaded).
 
 <p align="center">
 
@@ -156,16 +157,15 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 </div>
 
 <div class="txtimg">
-BIDS-Validator errors after fix
-<img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="380px;" alt=""/>
+<img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="380px;" title="BIDS-Validator errors after fix" alt=""/>
 </div>
 
 </p>
 
 <p align="center">
 <div class="txtimg">
-DataLad explanations for the 2 errors remaining (big files are not present, only the dataset structure)
-<img src="images/DataLad_FAQ_BIDS_validator.png" width="400px;" alt=""/>
+
+<img src="images/DataLad_FAQ_BIDS_validator.png" width="400px;" title="DataLad FAQ BIDS Validator" alt=""/>
 </div>
 </p>
 
