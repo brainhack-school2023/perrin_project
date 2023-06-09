@@ -1,3 +1,10 @@
+# Python environment setup
+
+Run from the root directory of the project
+```
+pip install -r requirements.txt
+```
+
 # Dataset setup
 
 Create a dataset
