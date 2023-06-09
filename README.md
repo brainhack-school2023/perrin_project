@@ -10,7 +10,7 @@
 
 Can functional connectivity predict sleep deprivation? This project aims to explore neuroimaging data organization to build a workflow from the acquisition of an open dataset to the visualization of brain connectivity. The pipeline will be detailed and carried out for one subject, using resting state fMRI to compare the result between normal sleep and sleep deprivation (less than 3 hours of sleep the previous night).
 
-Keywords: sleep, rs-fMRI, BIDS, preprocessing, connectivity, open-science
+**Keywords:** *sleep*, *rs-fMRI*, *BIDS*, *preprocessing*, *connectivity*, *open-science*
 
 ## Project definition
 
