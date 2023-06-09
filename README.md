@@ -55,7 +55,7 @@ Note: An old page for this dataset can also be found on the deprecated website O
 * A markdown file for the project description
 * A Python script to update the dataset to be BIDS-compliant
 * A markdown file providing the Bash commands to download the dataset, run the Python script, and run fMRI preprocessing, all using DataLad
-* A Jupyter Notebook for visualization (and machine learning)
+* A Jupyter Notebook for visualization
 * A requirements.txt file to specify the Python environment for the script and the notebook
 
 ## Results
