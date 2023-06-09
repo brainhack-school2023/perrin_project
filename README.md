@@ -151,9 +151,9 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 * Just below are the results using BIDS Validator before fixing the errors by and after running the script. The two errors remaining are explained by the way the dataset was retrieved using DataLad explanations (the dataset's structure is there but the big files are not downloaded).
 
 <p align="center">
-<img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" title="BIDS-Validator errors before fix" alt=""/>
+<img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" title="BIDS Validator errors before fix" alt=""/>
 
-<img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="385px;" title="BIDS-Validator errors after fix" alt=""/>
+<img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="385px;" title="BIDS Validator errors after fix" alt=""/>
 </p>
 
 <p align="center">
@@ -164,14 +164,18 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 
 A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/sleep_connectivity.ipynb)) for visualization of connectomes and analysis. The results can also be found [here](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/results).
 
+The results obtained are presented below. The first figure obtained is a correlation matrix, the second is a connectome.
+
+On the left are from the first session for subject 1, which corresponds to normal sleep, the results on the right correspond to sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition.
+
 <p align="center">
-<img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" alt=""/>
+<img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" title="Session 1: Sleep alt=""/>
 <img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png" width="400px;" alt=""/>
 </p>
 
 <p align="center">
 <img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" alt=""/>
-<img src="results/connectivity/ses-2-sleep-normal-connectome_5.png" width="400px;" alt=""/>
+<img src="results/connectivity/ses-2-sleep-deprived-connectome_5.png" width="400px;" alt=""/>
 </p>
 
 <p align="center">
