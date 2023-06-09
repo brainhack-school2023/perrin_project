@@ -139,7 +139,7 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 * A Markdown file ([datalad_commands](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/datalad_commands)) containing the DataLad bash code to obtain the dataset, run the above-mentioned Python script, and run the fMRI preprocessing, all using version-control with DataLad.
 * Just below are the results using BIDS Validator before fixing the errors by and after running the script. The two errors remaining are explained by the way the dataset was retrieved using DataLad (the dataset's structure is there but the big files are not downloaded), as shown on the screenshot from the [DataLad FAQ](https://handbook.datalad.org/en/latest/basics/101-180-FAQ.html) below.
 
-BIDS Validator errors before and after fix.
+*BIDS Validator errors before and after fix.*
 
 <p align="center">
 <img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" title="BIDS Validator errors before fix" alt=""/>
@@ -147,7 +147,7 @@ BIDS Validator errors before and after fix.
 <img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="385px;" title="BIDS Validator errors after fix" alt=""/>
 </p>
 
-DataLad FAQ paragraph on BIDS Validator issues.
+*DataLad FAQ paragraph on BIDS Validator issues.*
 
 <p align="center">
 <img src="images/DataLad_FAQ_BIDS_validator.png" width="400px;" title="DataLad FAQ BIDS Validator" alt=""/>
@@ -159,20 +159,21 @@ A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-scho
 
 The results obtained for the first subject (sub-9001) are presented below.
 
-Correlation matrices after normal sleep (left) and partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition (right).
+*Correlation matrices after normal sleep (left) and partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition (right).*
+
 <p align="center">
 <img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" title="Correlation matrix for Session 1 (Normal Sleep)" alt=""/>
 <img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png" width="400px;" title="Correlation matrix for Session 2 (Partial Sleep Deprivation)" alt=""/>
 </p>
 
-Difference between the two correlation matrices.
+*Difference between the two correlation matrices.*
 
 <p align="center">
 <img src="results/connectivity/correlation-matrix-diff.png"
 width="400px;" title="Difference between the two correlation matrices" alt=""/>
 </p>
 
-Corresponding connectomes after normal sleep (left) and partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition (right).
+*Corresponding connectomes after normal sleep (left) and partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition (right).*
 
 <p align="center">
 <img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" title="Connectome for Session 1 (Normal Sleep)" alt=""/>
