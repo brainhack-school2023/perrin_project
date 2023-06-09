@@ -1,0 +1,10 @@
+# Requirements
+# Python version 3.10.4
+# Packages versions obtained using ```pip show <package_name>```
+
+glob2==0.7
+matplotlib==3.6.2
+nibabel==4.0.2
+nilearn==0.10.1
+numpy==1.23.5
+pandas==2.0.2
