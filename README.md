@@ -9,7 +9,7 @@ Can functional connectivity predict sleep deprivation? This project aims to expl
 Keywords: sleep, rs-fMRI, BIDS, preprocessing, connectivity, open-science
 
 <p align="center">
-<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="400px;" title="Programming Memes while sleeping" alt=""/>
+<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="200px;" title="Programming Memes while sleeping" alt=""/>
 </p>
 
 ## Project definition
