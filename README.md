@@ -151,22 +151,13 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 * Just below are the results using BIDS Validator before fixing the errors by and after running the script. The two errors remaining are explained by the way the dataset was retrieved using DataLad explanations (the dataset's structure is there but the big files are not downloaded).
 
 <p align="center">
-
-<div class="txtimg">
 <img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" title="BIDS-Validator errors before fix" alt=""/>
-</div>
 
-<div class="txtimg">
 <img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="380px;" title="BIDS-Validator errors after fix" alt=""/>
-</div>
-
 </p>
 
 <p align="center">
-<div class="txtimg">
-
 <img src="images/DataLad_FAQ_BIDS_validator.png" width="400px;" title="DataLad FAQ BIDS Validator" alt=""/>
-</div>
 </p>
 
 #### Deliverable 4: analysis notebook
