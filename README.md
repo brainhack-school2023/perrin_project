@@ -2,15 +2,15 @@
 
 # Effects of Sleepiness on Resting-State Connectivity
 
+<p align="center">
+<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="200px;" title="Programming Memes while sleeping" alt=""/>
+</p>
+
 ## Summary:
 
 Can functional connectivity predict sleep deprivation? This project aims to explore neuroimaging data organization to build a workflow from the acquisition of an open dataset to the visualization of brain connectivity. The pipeline will be detailed and carried out for one subject, using resting state fMRI to compare the result between normal sleep and sleep deprivation (less than 3 hours of sleep the previous night).
 
 Keywords: sleep, rs-fMRI, BIDS, preprocessing, connectivity, open-science
-
-<p align="center">
-<img src="images/Programming-Memes-Programmer-while-sleeping.jpg" width="200px;" title="Programming Memes while sleeping" alt=""/>
-</p>
 
 ## Project definition
 
@@ -153,23 +153,26 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 
 A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/sleep_connectivity.ipynb)) for visualization of connectomes and analysis. The results can also be found [here](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/results).
 
-The results obtained are presented below. The first type of figure obtained is a correlation matrix, the second is a connectome.
+The results obtained for the first subject (sub-9001) are presented below.
 
-On the left are from the first session for subject 1, which corresponds to normal sleep, the results on the right correspond to partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition.
-
+**Correlation matrices after normal sleep (left) and partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition (right).**
 <p align="center">
 <img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" title="Correlation matrix for Session 1 (Normal Sleep)" alt=""/>
 <img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png" width="400px;" title="Correlation matrix for Session 2 (Partial Sleep Deprivation)" alt=""/>
 </p>
 
-<p align="center">
-<img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" title="Connectome for Session 1 (Normal Sleep)" alt=""/>
-<img src="results/connectivity/ses-2-sleep-deprived-connectome_5.png" width="400px;" title="Connectome for Session 2 (Partial Sleep Deprivation)" alt=""/>
-</p>
+**Difference between the two correlation matrices.**
 
 <p align="center">
 <img src="results/connectivity/correlation-matrix-diff.png"
 width="400px;" title="Difference between the two correlation matrices" alt=""/>
+</p>
+
+**Corresponding connectomes after normal sleep (left) and partial sleep deprivation, i.e. only 3 hours of sleep the night before data acquisition (right).**
+
+<p align="center">
+<img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" title="Connectome for Session 1 (Normal Sleep)" alt=""/>
+<img src="results/connectivity/ses-2-sleep-deprived-connectome_5.png" width="400px;" title="Connectome for Session 2 (Partial Sleep Deprivation)" alt=""/>
 </p>
 
 Adult fMRI studies have demonstrated associations between restricted sleep and amygdala-prefrontal functional connectivity. Therefore, the expected result is to see differences in functional connectivity in the amygdala and the prefrontal cortex.
