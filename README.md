@@ -150,12 +150,12 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 * A Markdown file ([datalad_commands](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/datalad_commands)) containing the DataLad bash code to obtain the dataset, run the above-mentioned Python script, and run the fMRI preprocessing, all using version-control with DataLad.
 
 <p align="center">
-<img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png">
-<img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png">
+<img src="results/bids_validation/2023.05.26-01_bids_validator_errors.png" width="400px;" alt=""/>
+<img src="results/bids_validation/2023.05.30-01_bids_validator_errors.png" width="400px;" alt=""/>
 </p>
 
 <p align="center">
-<img src="results/images/DataLad_FAQ_BIDS_validator.png">
+<img src="images/DataLad_FAQ_BIDS_validator.png" width="400px;" alt=""/>
 </p>
 
 #### Deliverable 4: analysis notebook
@@ -163,17 +163,18 @@ The [README.md](https://github.com/brainhack-school2023/perrin_project/blob/e513
 A Jupyter Notebook ([sleep_connectivity.ipynb](https://github.com/brainhack-school2023/perrin_project/blob/e5138662c5facfead956ddd53dde26edd5aa6b3d/scripts/sleep_connectivity.ipynb)) for visualization of connectomes and analysis. The results can also be found [here](https://github.com/brainhack-school2023/perrin_project/tree/e5138662c5facfead956ddd53dde26edd5aa6b3d/results).
 
 <p align="center">
-<img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png">
-<img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png">
+<img src="results/connectivity/ses-1-sleep-normal-correlation-matrix.png" width="400px;" alt=""/>
+<img src="results/connectivity/ses-2-sleep-deprived-correlation-matrix.png" width="400px;" alt=""/>
 </p>
 
 <p align="center">
-<img src="results/connectivity/ses-1-sleep-normal-connectome_5.png">
-<img src="results/connectivity/ses-2-sleep-normal-connectome_5.png">
+<img src="results/connectivity/ses-1-sleep-normal-connectome_5.png" width="400px;" alt=""/>
+<img src="results/connectivity/ses-2-sleep-normal-connectome_5.png" width="400px;" alt=""/>
 </p>
 
 <p align="center">
-<img src="results/connectivity/correlation-matrix-diff.png">
+<img src="results/connectivity/correlation-matrix-diff.png"
+width="400px;" alt=""/>
 </p>
 
 #### Deliverable 5: final project presentation
